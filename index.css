@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscayled;
+}
+
+:root {
+  --border: 1px solid #ffffff1a;
+  --bg-color: #121214;
+  --color-white: #ffffff;
+  --color-grey-200: #E1E1E6;
+  --color-grey-300: #C4C4CC;
+  --color-accent-orange: #F48F56;
+  --color-accent-orange-hover: #f37c37;
+  --color-light-grey: #9FF9CC;
+  --color-dark-grey:  #00292E;
+}
+
+body,
+table,
+input,
+button {
+  font: 300 16px/140% 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--color-white);
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 32px;
+}
+
+header {
+  padding: 20px 0;
+}
+
+form {
+  border: var(--border);
+  border-inline: none;
+  padding: 20px 0;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset>div {
+  display: flex;
+  gap: 12px;
+}
+
+.input-wrapper {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  border: var(--border);
+  border-radius: 10px;
+
+  padding: 8px 12px;
+
+  font: 400 14px/150% 'Roboto', sans-serif;
+  color: var(--color-grey-200);
+}
+
+input {
+  all: unset;
+}
+
+
+fieldset legend,
+section h2 {
+  font: 700 16px/140% 'Roboto', sans-serif;
+  color: var(--color-grey-300);
+  padding-bottom: 16px;
+}
+
+fieldset button {
+  width: fit-content;
+  border: 0;
+  background: var(--color-accent-orange);
+  border-radius: 10px;
+  padding: 7px 20px;
+
+  font: 700 12px/24px 'Roboto', sans-serif;
+  color: var(--color-dark-grey);
+  transition: background ease-in-out .1s;
+}
+
+fieldset button:hover {
+  background: var(--color-accent-orange-hover);
+}
+
+.participant-list {
+  padding: 20px 0;
+}
+
+.participant-list > div {
+  border: var(--border);
+  border-radius: 8px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table thead {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+thead th,
+tbody td {
+  padding: 12px 16px;
+}
+
+tbody td {
+  border-top: var(--border);
+  font-size: 13px;
+  line-height: 15px;
+  color: var(--color-grey-300);
+}
+
+tbody td strong {
+  color: var(--color-white);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+tbody td small {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+tbody td button {
+  all: unset;
+  color: var(--color-light-grey);
+  transition: 300ms;
+  border-bottom: 1px solid transparent;
+}
+
+tbody td button:hover {
+  border-color: var(--color-light-grey);
+}
